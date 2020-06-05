@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="hstapcorr",
-    version="1.1.0",
+    version="1.1.1",
     author="Kornpob Bhirombhakdi",
     author_email="kbhirombhakdi@stsci.edu",
     long_description=open("README.md").read(),
@@ -10,9 +10,9 @@ setuptools.setup(
     url="https://github.com/bkornpob/hstapcorr",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3"
+        "Programming Language :: Python :: 2"
         ,"License :: OSI Approved :: MIT License"
         ,"Operating System :: OS Independent"
     ],
-    python_requires='>=3.'
+    python_requires='>=2.'
 )
