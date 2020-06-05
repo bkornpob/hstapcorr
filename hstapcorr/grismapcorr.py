@@ -123,7 +123,7 @@ class GrismApCorr:
             wave = np.copy(self.table[i]['wave'])
             value = np.copy(self.table[i]['value'])
             model = interp2d(wave,apsize,value,kind='linear',copy=True
-                             ,bounds_error=False,fill_value=np.nan
+                             ,bounds_error=False,fill_value=None
                             )
             self.table[i]['model'] = copy.deepcopy(model)
     def make_apcorr(self,instrument,wave,apsize,apunit='pix'
